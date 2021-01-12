@@ -36,7 +36,7 @@ if fromdb == True:
 		result = getResult(symbol)
 		# do what  you  want with the data
 else:
-	symbol input("symbol: ")
+	symbol = input("symbol: ")
 	dob  = input("dob: ")
 	result = getResult(symbol)
 	# do whaat ever you  waant with this data
