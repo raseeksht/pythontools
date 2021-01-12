@@ -2,6 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 import re
 import json
+import webbrowser
 
 
 # make it False if you  want to enter email aand password each time
@@ -40,5 +41,6 @@ except Exception:
 	inf = soup.find_all("a",class_="btn-warning")
 	for each in inf:
 		print(each['href'])
+		webbrowser.open(each['href'])
 
 
