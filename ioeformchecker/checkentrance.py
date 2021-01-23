@@ -3,7 +3,7 @@ import requests
 from bs4 import BeautifulSoup
 
 url = "https://entrance.ioe.edu.np/Students/Review"
-jsonFile = 'a/mydata2.json'
+jsonFile = 'mydata.json'
 f = open(jsonFile)
 
 a = json.load(f)
