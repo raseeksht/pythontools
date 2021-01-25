@@ -59,9 +59,6 @@ try:
 			print('Done Downloding')
 			print(f'Saved at: {os.getcwd()}/{cardName}')
 
-			
-
-
 except Exception as e:
 	print("\nok try ma error ako le malai yaha dekhna paryo hai ;)")
 	print("name,dob ki id no ko mistake pani huna sakxa hai... check it out\n")
