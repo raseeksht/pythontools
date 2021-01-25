@@ -1,19 +1,26 @@
+
 import requests
 from bs4 import BeautifulSoup
 import re
 import json
 import webbrowser
+import os
 
 
 # make it False if you  want to enter email aand password each time
-# True if you're lazy just update email and password in loginInfo.json 
+# True if you're lazy, just update email and password in loginInfo.json 
 useJsonLogin = True
 
 
 url  ="https://pea.edu.np/login"
 
+if os.getcwd()=='/home/raseek/Desktop/raseek/peazoomlink':
+	filename = 'myinfo/loginInfo.json'
+else:
+	filename = 'loginInfo.json'
+
 if useJsonLogin == True:
-	login_data = json.load(open('loginInfo.json'))
+	login_data = json.load(open(filename))
 else:
 	login_data={
 	'email' : input("email: "),
